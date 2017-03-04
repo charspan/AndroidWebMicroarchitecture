@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>客户端</title>
+<script src="js/jquery.js"></script>
+<script src="js/client.js"></script>
+</head>
+<body style="text-align: center;">
+	<p>我就是内置网页</p>
+	<hr />
+	<p>目前图片上传客户端还存在 bug, 用 postman 可以实现图片上传</p>
+	<form action="/upload_image/" method="POST"
+		enctype="multipart/form-data">
+		<table border="1" style="margin: 0 auto;">
+			<caption>图片上传</caption>
+			<tr>
+				<td><img src="image/test_upload.jpg"/></td>
+				<td><input type="file" value="image/test_upload.jpg"/></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="提交" /></td>
+			</tr>
+		</table>
+	</form>
+	<hr />
+	<table border="1" style="margin: 0 auto;">
+		<caption>数据提交</caption>
+		<tr>
+			<td>用户名</td>
+			<td><input id="username" type="text" value="charspan" /></td>
+		</tr>
+		<tr>
+			<td>密码</td>
+			<td><input id="password" type="text" value="123456" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><button id="submit">提交</button></td>
+		</tr>
+	</table>
+</body>
+</html>
